@@ -5,7 +5,7 @@ Get the IPv4 addresses of all network interfaces on a machine
 # Installation
 
 ```bash
-npm install -S interface-ip
+npm install -S interface-addresses
 ```
 
 # Usage
