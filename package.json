@@ -1,5 +1,5 @@
 {
-  "name": "inteface-addresses",
+  "name": "interface-addresses",
   "version": "0.0.3",
   "description": "get the private network ip address of the machine",
   "main": "index.js",
