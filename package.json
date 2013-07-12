@@ -22,5 +22,15 @@
   "devDependencies": {
     "should": "~1.2.2",
     "mocha": "~1.12.0"
+  },
+  "dependencies": {
+    "should": "~1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/interface-addresses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nisaacson/interface-addresses/issues"
   }
 }
