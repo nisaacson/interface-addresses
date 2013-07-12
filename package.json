@@ -1,0 +1,26 @@
+{
+  "name": "inteface-addresses",
+  "version": "0.0.0",
+  "description": "get the private network ip address of the machine",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "ip",
+    "address",
+    "network",
+    "private",
+    "os",
+    "dns"
+  ],
+  "author": "Noah Isaacson",
+  "license": "BSD",
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.12.0"
+  }
+}
