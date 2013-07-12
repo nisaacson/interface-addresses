@@ -1,5 +1,7 @@
 # Interface Addresses
 
+[![Build Status](https://travis-ci.org/nisaacson/interface-addresses.png)](https://travis-ci.org/nisaacson/interface-addresses)
+
 Get the IPv4 addresses of all network interfaces on a machine
 
 # Installation
