@@ -15,6 +15,7 @@ npm install -S interface-addresses
 Require the module and call it with no arguments. The returned `addresses` value will be an object where the key is the name of the interface and the value is the ip address
 
 ```javascript
+var inspect = require('eyespect').inspector()
 var interfaceAddresses = require('interface-addresses')
 var addresses = interfaceAddresses()
 inspect(addresses, 'network interface IPv4 addresses (non-internal only)')
@@ -30,6 +31,13 @@ In the example above, addresses is an object that looks like the following
     vboxnet0: '33.33.33.1'
 }
 ```
+
+You will need to install the `eyespect` module to run the example code above, which you can do using `npm`
+
+```bash
+npm install -S eyespect
+```
+
 
 # Test
 
