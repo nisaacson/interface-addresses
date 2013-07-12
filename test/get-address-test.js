@@ -15,12 +15,12 @@ describe('Private IP Address', function() {
 });
 
 
-var namePattern = /^\w+$/;
-var ipPattern = /\b(?:\d{1,3}\.){3}\d{1,3}\b/;
 
-function validateAddress(name, ip) {
-  var validName = namePattern.test(name)
-  var validIP = ipPattern.test(ip)
-  assert.ok(validName, 'name is invalid: ' + name)
-  assert.ok(validIP, 'ip is invalid: ' + ip)
-}
+var validateAddress = (function() {
+  var ipPattern = /\b(?:\d{1,3}\.){3}\d{1,3}\b/;
+  return function(name, ip) {
+    name.length.should.be.above(0)
+    var validIP = ipPattern.test(ip)
+    assert.ok(validIP, 'ip is invalid: ' + ip)
+  }
+}())
