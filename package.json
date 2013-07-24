@@ -9,6 +9,7 @@
   "scripts": {
     "test": "make test"
   },
+  "bin": "cli.js",
   "keywords": [
     "ip",
     "address",
@@ -24,7 +25,8 @@
     "mocha": "~1.12.0"
   },
   "dependencies": {
-    "should": "~1.2.2"
+    "should": "~1.2.2",
+    "optimist": "~0.6.0"
   },
   "repository": {
     "type": "git",
