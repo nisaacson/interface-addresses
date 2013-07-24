@@ -39,6 +39,21 @@ npm install -S eyespect
 ```
 
 
+# CLI
+
+You can also use interface-addresses as a command line tool. Currently you can only get the host for a single adapter adapater at a
+time.
+
+## Example
+
+To get the ip address for the `en0` adapter, execute the following
+
+```bash
+npm install -g interface-addresses
+interface-addresses --adapter "en0"
+```
+
+
 # Test
 
 ```bash
