@@ -1,12 +1,13 @@
 var os = require('os')
-module.exports = function() {
+module.exports = function(family) {
+  family = family || 'IPv4';
   var addresses = {}
   var interfaces = os.networkInterfaces();
   var keys = Object.keys(interfaces).filter(function(key) {
     var items = interfaces[key]
     items.forEach(function(item) {
-      var family = item.family
-      if (family !== 'IPv4') {
+      var itemFamily = item.family
+      if (itemFamily !== family) {
         return false
       }
       var internal = item.internal
